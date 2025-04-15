@@ -1,0 +1,24 @@
+.hero{
+    margin-top: 4rem;
+}
+.left-box{
+    flex-grow: 1;
+}
+.image{
+    align-items: end;
+}
+.image img{
+    width: 10%;
+    margin-right: 10px;
+    border: 2px solid var(--mainColor);
+    border-radius: 50%;
+    padding: 2px;
+    /*  */
+    
+}
+.icon-verified{
+    color: rgb(0, 162, 255);
+    margin-bottom: 0;
+    
+   
+}

@@ -1,0 +1,127 @@
+/*==========================
+file contains:
+============================
+1-Header Design
+2-Navbar Desgin
+3-Mode Design
+4-Menu Design
+5-Icons Buttons
+6-Madia query (Responsive Design)
+*/
+
+
+/*******Header Design******/
+    header{
+        margin: 2rem 0;
+    }
+/*******Navbar Design******/
+    header nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bgHeader);
+        border: 2px solid var(--line);
+        border-radius: 25px;
+        padding: 5px 15px;
+        margin: auto;
+        box-shadow: 2px 2px 20px rgba(92, 48, 69, 0.685);;
+    }
+    header.flex{
+        justify-content: space-between;
+    }
+    header ul{
+        gap: 15px;
+        align-items: center;
+    
+    }
+    header li a{
+        color: var(--title);
+        opacity: 0.9;
+        font-size: 0.9rem;
+    }
+    header li a:hover{
+        color: var(--mainColor);
+        opacity: 0.8;
+        font-size: 0.92rem;
+    }
+
+/**************Mode-Menu***************/
+    .navmenu{
+        display: none;
+    }
+    .fixed{
+        position: fixed;
+        inset: 0;
+        z-index: 11;
+        background-color: rgba(129, 105, 128, 0.705);
+    }
+    @keyframes mymove {
+        0%{scale: 0;}
+        70%{scale: 1.1;}
+        100%{scale: 1;}
+    }
+    header .fixed ul.model{
+        animation: mymove 0.5s 1;
+        border: 1px solid var(--mainColor);
+        width: 70%;
+        margin: auto;
+        margin-top: 3rem;
+        padding: 1rem 3rem;
+        background-color: var(--bgHeader);
+        border-radius: 25px;
+    }
+
+    .model li{
+        padding: 0.4rem 0;
+        border-bottom: 1px solid var(--line);
+    }
+    .model li:last-child{
+        border-bottom: none;  
+    }
+    .model li:first-child{
+        text-align: end;  
+        border-bottom: none;
+        padding: 0;
+        margin-bottom: -1rem;
+    }
+
+/**********Icons************/
+    header .icon-menu , header button.mode{
+        background-color: var(--bgHeader);
+        width:2rem ;
+        height: 2rem;
+        color: rgb(189, 189, 189);
+        padding: 0.1rem ;
+        border-radius: 25px;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 2px 2px 20px var(--bgHeader);
+        transition:0.3s ;
+    }
+    header button.mode{
+        font-size: 1.5rem;
+    }
+    .icon-menu:hover , .mode:hover{
+        color: var(--title);
+        border: 1px solid var(--mainColor);
+    }
+    .icon-clear{
+    font-size: 1.2rem;
+    transition: 0.2s; 
+    color: var(--subTitle)
+    }
+    .icon-clear:hover{
+        font-size: 1.5rem;
+        color: crimson;
+        rotate: 180deg;
+    }
+
+
+/**********Responsive Design***********/
+    @media (max-width:800px) {
+        header nav{display: none;}
+        .navmenu{display: block;}
+    }
+    @media (min-width:750px) {
+        .fixed{display: none;} 
+    }
