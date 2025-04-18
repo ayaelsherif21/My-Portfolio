@@ -18,6 +18,7 @@ html{
   /* --mainColor:rgb(142,58,89); */
   --bgHeader:rgb(70, 37, 53);
   --mainColor:rgb(255, 162, 201);
+  --icon-hover:rgb(255, 162, 201);
 }
 
 .light{

@@ -1,11 +1,17 @@
+/*====================================
+1-Left Section
+2-Right Section
+======================================*/
 .hero{
     margin-top: 4rem;
 }
+/*********1-Left Section********/
 .left-box{
     flex-grow: 1;
 }
 .image{
     align-items: end;
+    
 }
 .image img{
     width: 10%;
@@ -13,12 +19,40 @@
     border: 2px solid var(--mainColor);
     border-radius: 50%;
     padding: 2px;
-    /*  */
+    /* box-shadow: 2px 2px 20px white inset; */
     
 }
 .icon-verified{
     color: rgb(0, 162, 255);
-    margin-bottom: 0;
+    margin-bottom: 0.4rem;
     
-   
 }
+.title{
+    margin:2.1rem 0;
+}
+.title h1{
+    margin-bottom: 1rem;
+    color: var(--title);
+}
+.title p{
+    color: var(--subTitle);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    width: 65%;
+}
+.socialMedia{
+    gap: 20px;
+    font-size: 1.2rem;
+    color: var(--subTitle);
+    
+}
+.icons:hover{
+    font-size: 1.4rem;
+    color: var(--icon-hover);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+/********2-Right Section*********/
