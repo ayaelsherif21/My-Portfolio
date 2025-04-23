@@ -23,7 +23,7 @@
     
 }
 .icon-verified{
-    color: rgb(0, 162, 255);
+    color: var(--blue);
     margin-bottom: 0.4rem;
     
 }
@@ -46,7 +46,7 @@
     color: var(--subTitle);
     
 }
-.icons:hover{
+.socialMedia .icons:hover{
     font-size: 1.4rem;
     color: var(--icon-hover);
     transition: 0.3s;

@@ -1,0 +1,110 @@
+main.flex{
+    gap: 1.8rem;
+    margin: 5rem 0;
+    align-items: start;
+}
+
+/*******1-Left Section => Buttons********/
+.left-section{
+flex-direction: column;
+gap: 1.2rem;
+}
+.left-section button{
+    width: 10rem;
+    text-align: center;
+    background-color: rgba(36, 37, 46 ,1);
+    padding: 10px 7px;
+    text-transform: capitalize;
+    opacity: 0.7;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+.left-section button.active{
+opacity: 1;
+border: 1px solid var(--mainColor);
+padding: 12px 9px;
+}
+.left-section button:hover{
+    opacity: 1;
+    /* border: 1px solid var(--blue); */
+
+}
+
+
+
+/*******2-Right Section => Cards********/
+.right-section{
+    /* flex-grow: 1; */
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 2rem;
+}
+/* rgba(255, 162, 255, 0.952) */
+.card {
+    border: 1px solid var(--bgHeader);
+    transition: 0.2s;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(156, 85, 119, 0.651),#ffffff00 , rgba(143, 78, 109, 0.863));
+    
+}
+.card:hover {
+    border: 1px solid var(--mainColor);
+    rotate: -2deg;
+    scale: 1.02;
+    cursor: pointer;
+ }
+ .card img{
+     border-radius: 10px;
+ }
+.box{
+    padding: 0.7rem 1rem;
+}
+.box h3{
+    color: var(--title);
+}
+.box p{
+    color: var(--subTitle);
+    font-size: 0.75rem;
+    margin: 0.6rem 0;
+}
+.card .icons{
+    justify-content: space-between;
+}
+.icons .icon-link, .icons .icon-github{
+    font-size:1.2rem ;
+    color: var(--subTitle);
+}
+
+.icons .icon-link:hover, .icons .icon-github:hover{
+    font-size:1.25rem ;
+    color: var(--icon-hover);
+    cursor: pointer;
+}
+.cardLink{
+    color: var(--blue);
+    font-size: 0.9rem;
+}
+.cardLink .icon-arrow-right {
+    font-size: 0.7rem;
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
+
+
+@media (max-width:600px){
+    main.flex{
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 3rem 0;
+        align-items: center;
+     
+    }
+    
+    .left-section{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
+
