@@ -18,7 +18,7 @@ export default function ContactUs() {
 
           <div className='flex' style={{marginTop:"1.2rem"}}>
             <label htmlFor="message">Your Message: </label>
-            <textarea placeholder="Tell me anthing you want.." style={{ marginLeft:"2.75rem"}} required rows={5} cols={10}  name="" id="message"></textarea>
+            <textarea placeholder="Tell me anthing you want.."  required rows={5} cols={10}  name="" id="message"></textarea>
           </div>
              <button  className="submit ">Submit</button>
            

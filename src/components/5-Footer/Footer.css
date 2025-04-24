@@ -14,3 +14,9 @@ footer ul li a , footer p{
 footer ul li a:hover{
     color: var(--mainColor);   
 }
+@media (max-width:700px){
+    footer{
+        flex-direction: column;
+        line-height: 2rem;
+    }
+}
