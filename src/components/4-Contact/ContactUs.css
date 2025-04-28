@@ -29,7 +29,11 @@
     width: 21rem;
     border-radius: 5px;
 } 
-
+.light .contact form #email , .light .contact form #message{
+    background-color: rgba(255, 255, 255, 0.267);
+    border: 1px solid #36363681;
+    color:var(--title);
+}
 .contact form #email:focus , .contact form #message:focus{
     border: 1px solid var(--mainColor);
 }
@@ -48,8 +52,18 @@
     float: inline-end;
 }
 
-
+/*******right sec*********/
+.contact-Animation{
+    width: 55%;
+    height:5%;
+    translate: 150px -60px 50px;
+}
 /**/
+@media (max-width:1000px){
+    .contact-Animation{
+        display: none;
+    }
+}
 @media (max-width:600px){
     .contact form{
         width: 90%;

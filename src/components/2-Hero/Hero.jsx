@@ -1,5 +1,7 @@
 import React from 'react'
 import './Hero.css'
+import Lottie from "lottie-react";
+import developerAnimation from '../../Animation/developer.json'
 export default function Hero() {
   return (
     <section className='hero flex'>
@@ -10,6 +12,7 @@ export default function Hero() {
         </div>
         <div className="title">
           <h1>Hi, I'm Aya Mohamed</h1>
+          {/* <h2>Front End Developer</h2> */}
           <p className='subTitle'> A passionate <strong>Frontend Developer</strong> specializing in <strong>React.js</strong>,  
               I build responsive, user-friendly web applications 
               I love turning ideas into clean, efficient code with modern tools like   
@@ -24,7 +27,9 @@ export default function Hero() {
         <div className="icons icon-facebook"></div>
        </div>
       </div>
-      <div className="right-box animation">animation</div>
+      <div className="right-box animation">
+        <Lottie className='developer-Animation' animationData={developerAnimation} />
+      </div>
     </section>
   )
 }

@@ -14,7 +14,7 @@
     
 }
 .image img{
-    width: 10%;
+    width: 25%;
     margin-right: 10px;
     border: 2px solid var(--mainColor);
     border-radius: 50%;
@@ -28,17 +28,17 @@
     
 }
 .title{
-    margin:2.1rem 0;
+    margin:1.8rem 0;
 }
 .title h1{
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     color: var(--title);
 }
 .title p{
     color: var(--subTitle);
     font-size: 0.9rem;
     line-height: 1.5rem;
-    width: 65%;
+    width: 80%;
 }
 .socialMedia{
     gap: 20px;
@@ -56,3 +56,16 @@
 
 
 /********2-Right Section*********/
+
+.animation{
+    width: 120%;
+    /* height:5%; */
+    translate: 80px 30px 10px;
+}
+
+
+@media (max-width:1000px){
+    .animation{
+        display: none;
+    }
+}
