@@ -1,22 +1,54 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Projects.css'
+import { myProjects } from './myProjects'
+
+
 
 export default function Projects() {
+
+  const [currActive, setcurrActive] = useState("all")
+  const [Arr, setArr] = useState(myProjects)
+  const handleClick = (buttonCategory) => {
+    setcurrActive(buttonCategory);
+    const newArr =myProjects.filter((item) => { 
+        const myCategory = item.category.find((myItem) => { 
+          return myItem === buttonCategory
+  ;
+        })
+      return myCategory === buttonCategory
+     })
+    setArr(newArr)
+  }
   return (
     <main className='flex'>
       <section className='flex left-section'>
-        <button className='active'>All Projects</button>
-        <button>HTML/CSS</button>
-        <button>JavaScript</button>
-        <button>React</button>
+        <button onClick={()=>{
+            setcurrActive("all");
+            setArr(myProjects)
+        }} className={currActive === "all"? 'active' :null}>All Projects</button>
+
+        <button onClick={()=>{
+          handleClick("css")
+        }} className={currActive === "css"? 'active' :null}>
+          HTML/CSS
+        </button>
+
+        <button onClick={()=>{
+          handleClick("js")
+        }} className={currActive=== "js" ?'active' : null}>JavaScript</button>
+
+        <button onClick={()=>{
+         handleClick("react")
+        }} className={currActive === "react" ? 'active' :null}>React</button>
       </section>
+
       <section className='right-section flex'>
-        {["aa" , "bb" , "cc" , "dd" , "ee" , "ff"].map((item)=>{
+        {Arr.map((item)=>{
           return(  
-          <article className="card">
-            <img width={273} src="./1.jpg" alt="" />
+          <article key={item.imgPath} className="card">
+            <img width={273} src={item.imgPath} alt="" />
             <div style={{width:"240px"}} className="box">
-              <h3 className="card-title">SpaceZone</h3>
+              <h3 className="card-title">{item.projectTitle}</h3>
               <p className='cardsub-title'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, repudiandae veniam. Aperiam nam quidem amet?</p>
               <div className="icons flex">
             <div style={{gap:"11px"}} className='flex'>
