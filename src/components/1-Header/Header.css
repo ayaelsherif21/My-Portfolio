@@ -19,12 +19,12 @@ file contains:
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(--bgHeader);
+        background-color: var(--bgNav);
         border: 2px solid var(--line);
         border-radius: 25px;
         padding: 5px 15px;
         margin: auto;
-        box-shadow: 2px 2px 20px rgba(92, 48, 69, 0.685);;
+        box-shadow: 2px 2px 10px rgba(51, 48, 49, 0.685);;
     }
     header.flex{
         justify-content: space-between;
@@ -87,7 +87,7 @@ file contains:
 
 /**********Icons************/
     header .icon-menu , header button.mode{
-        background-color: var(--bgHeader);
+        background-color: var(--bgNav);
         width:2rem ;
         height: 2rem;
         color: rgb(189, 189, 189);
@@ -95,21 +95,30 @@ file contains:
         border-radius: 25px;
         justify-content: center;
         text-align: center;
-        box-shadow: 2px 2px 20px var(--bgHeader);
+        box-shadow: 1px 1px 15px rgba(168, 168, 168, 0.568);
         transition:0.3s ;
     }
-    header button.mode{
-        font-size: 1.5rem;
+    header button .icon-moon-stars{
+        font-size: 1.3rem;
+        color: cornsilk;
+    }
+    header button .icon-sun{
+        font-size: 1.1rem;
+        color: rgba(255, 166, 0, 0.822);
     }
     .icon-menu:hover , .mode:hover{
         color: var(--title);
-        border: 1px solid var(--mainColor);
+        border: 0.1rem solid var(--line);
+        /* opacity: 0.8; */
     }
     .icon-clear{
     font-size: 1.2rem;
     transition: 0.2s; 
     color: var(--subTitle)
     }
+    .icon-menu .flex li a{
+        color: var(--subTitle)
+        }
     .icon-clear:hover{
         font-size: 1.5rem;
         color: crimson;
