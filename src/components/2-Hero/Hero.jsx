@@ -12,11 +12,10 @@ export default function Hero() {
         </div>
         <div className="title">
           <h1>Hi, I'm Aya Mohamed</h1>
-          {/* <h2>Front End Developer</h2> */}
+          <h3>Front End Developer</h3>
           <p className='subTitle'> A passionate <strong>Frontend Developer</strong> specializing in <strong>React.js</strong>,  
               I build responsive, user-friendly web applications 
-              I love turning ideas into clean, efficient code with modern tools like   
-              <strong> Next.js, Redux, and Tailwind CSS</strong>. 
+              I love turning ideas into clean, efficient code with modern tools.  
               Let's build something amazing together!</p>
        </div>
        <div className="socialMedia flex 2x">
