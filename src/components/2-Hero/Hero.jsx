@@ -19,11 +19,11 @@ export default function Hero() {
               Let's build something amazing together!</p>
        </div>
        <div className="socialMedia flex 2x">
-        <div className="icons icon-linkedin-square"></div>
-        <div className="icons icon-github"></div>
-        <div className="icons icon-x"></div>
-        <div className="icons icon-instagram"></div>
-        <div className="icons icon-facebook"></div>
+        <a href='https://www.linkedin.com/in/aya-mohamed-73a539234/' className="icons icon-linkedin-square"></a>
+        <a href='https://github.com/ayaelsherif21' className="icons icon-github"></a>
+        <a href='https://x.com/AyaElsherif_' className="icons icon-x"></a>
+        <a href='https://www.instagram.com/ayamohamed_1d/' className="icons icon-instagram"></a>
+        <a href='https://www.facebook.com/profile.php?id=100003965799380' className="icons icon-facebook"></a>
        </div>
       </div>
       <div className="right-box animation">

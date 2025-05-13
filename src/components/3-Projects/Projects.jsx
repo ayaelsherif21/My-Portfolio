@@ -49,15 +49,15 @@ export default function Projects() {
             <img width={273} src={item.imgPath} alt="" />
             <div style={{width:"240px"}} className="box">
               <h3 className="card-title">{item.projectTitle}</h3>
-              <p className='cardsub-title'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, repudiandae veniam. Aperiam nam quidem amet?</p>
+              <p className='cardsub-title'>{item.details}</p>
               <div className="icons flex">
             <div style={{gap:"11px"}} className='flex'>
-            <div className="icons icon-link"></div>
-            <div className="icons icon-github"></div>
+            <a href={item.link} className="icons icon-link"></a>
+            <a href={item.github} className="icons icon-github"></a>
             </div>
-              <a className='cardLink flex' href=""> More
+              {/* <a className='cardLink flex' href=""> More
                 <span style={{alignSelf:"end"}} className="icons icon-arrow-right"></span>
-              </a>
+              </a> */}
               </div>
             </div>
           </article>)
